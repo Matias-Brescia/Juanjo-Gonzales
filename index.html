@@ -4,336 +4,478 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mi Chatbot - Soluciones Inteligentes</title>
-    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="reset.css" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet" />
+    <!-- AOS CSS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <!-- Fuentes e Iconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Archivo de estilos personalizado -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Mi Chatbot</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-          title="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbarContent" class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#inicio">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#acerca">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonios">Testimonios</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-          </ul>
+    <!-- Header con Navbar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark"
+        data-aos="fade-down">
+        <div class="container">
+          <a class="navbar-brand" href="#">Mi Chatbot</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#acerca">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#demo">Demo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonios">Testimonios</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-
-    <!-- Spacer para evitar superposición -->
-    <div class="mt-5"></div>
-
-    <!-- Hero Section -->
-    <header
-      id="inicio"
-      class="hero d-flex align-items-center justify-content-center text-center">
-      <div class="container">
-        <h1 class="display-4 fw-bold">Automatiza tu negocio con IA</h1>
-        <p class="lead">
-          Chatbots inteligentes para atención al cliente, ventas y soporte 24/7.
-        </p>
-        <a href="#servicios" class="btn btn-primary btn-lg mt-3"
-          >Descubre más</a
-        >
-      </div>
+      </nav>
     </header>
 
-    <!-- Acerca de -->
-    <section id="acerca" class="py-5">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-4">Acerca de Mi Chatbot</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <p>
-              En Mi Chatbot ofrecemos soluciones de inteligencia artificial
-              diseñadas para optimizar la atención al cliente y mejorar la
-              eficiencia operativa. Nuestro objetivo es ayudarte a conectar con
-              tus usuarios de forma rápida, eficiente y personalizada.
-            </p>
-            <p>
-              Con años de experiencia en el sector y un equipo especializado,
-              creamos chatbots adaptados a las necesidades de cada negocio.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <img
-              src="https://via.placeholder.com/500x300?text=Acerca+de+Mi+Chatbot"
-              alt="Acerca de Mi Chatbot"
-              class="img-fluid rounded" />
-          </div>
+    <!-- Contenido Principal -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="inicio"
+        class="hero d-flex align-items-center justify-content-center text-center"
+        data-aos="fade-up">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Automatiza tu negocio con IA</h1>
+          <p class="lead">
+            Chatbots inteligentes para atención al cliente, ventas y soporte
+            24/7.
+          </p>
+          <a href="#servicios" class="btn btn-primary btn-lg mt-3"
+            >Descubre más</a
+          >
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="py-5 bg-light">
-      <div class="container text-center">
-        <h2 class="fw-bold">Nuestros Servicios</h2>
-        <div class="row mt-4">
-          <div class="col-md-4 mb-3">
-            <div class="card shadow-sm h-100">
-              <div class="card-body">
-                <i class="fas fa-robot fa-3x text-primary mb-3"></i>
-                <h5 class="card-title">Chatbots Personalizados</h5>
-                <p class="card-text">
-                  Soluciones hechas a medida para la atención al cliente y
-                  soporte.
-                </p>
-              </div>
+      <!-- Acerca de -->
+      <section id="acerca" class="py-5" data-aos="fade-right">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4">Acerca de Mi Chatbot</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>
+                En Mi Chatbot ofrecemos soluciones de inteligencia artificial
+                diseñadas para optimizar la atención al cliente y mejorar la
+                eficiencia operativa. Nuestro objetivo es ayudarte a conectar
+                con tus usuarios de forma rápida, eficiente y personalizada.
+              </p>
+              <p>
+                Con años de experiencia en el sector y un equipo especializado,
+                creamos chatbots adaptados a las necesidades de cada negocio.
+              </p>
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card shadow-sm h-100">
-              <div class="card-body">
-                <i class="fas fa-network-wired fa-3x text-primary mb-3"></i>
-                <h5 class="card-title">Integración Multicanal</h5>
-                <p class="card-text">
-                  Implementación en redes sociales, webs, WhatsApp y más.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card shadow-sm h-100">
-              <div class="card-body">
-                <i class="fas fa-headset fa-3x text-primary mb-3"></i>
-                <h5 class="card-title">Soporte 24/7</h5>
-                <p class="card-text">
-                  Atención continua para resolver cualquier incidencia al
-                  instante.
-                </p>
-              </div>
+            <div class="col-md-6">
+              <img
+                src="https://via.placeholder.com/500x300?text=Acerca+de+Mi+Chatbot"
+                alt="Acerca de Mi Chatbot"
+                class="img-fluid rounded" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Demo Interactiva -->
-    <section id="demo" class="py-5">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-4">Demo Interactiva del Chatbot</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="chat-container shadow">
-              <div class="chat-header bg-primary text-white text-center p-3">
-                <h5>Mi Chatbot Demo</h5>
-              </div>
-              <div class="chat-messages p-3" id="chatMessages">
-                <div class="mb-2">
-                  <strong>Mi Chatbot:</strong> ¡Hola! ¿En qué puedo ayudarte
-                  hoy?
+      <!-- Servicios -->
+      <section id="servicios" class="py-5 bg-light" data-aos="fade-left">
+        <div class="container text-center">
+          <h2 class="fw-bold">Nuestros Servicios</h2>
+          <div class="row mt-4">
+            <article class="col-md-4 mb-3">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <i class="fas fa-robot fa-3x text-primary mb-3"></i>
+                  <h5 class="card-title">Chatbots Personalizados</h5>
+                  <p class="card-text">
+                    Soluciones hechas a medida para la atención al cliente y
+                    soporte.
+                  </p>
                 </div>
               </div>
-              <div class="chat-input p-2 d-flex border-top">
-                <input
-                  type="text"
-                  id="userInput"
-                  class="form-control"
-                  placeholder="Escribe tu mensaje..." />
+            </article>
+            <article class="col-md-4 mb-3">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <i class="fas fa-network-wired fa-3x text-primary mb-3"></i>
+                  <h5 class="card-title">Integración Multicanal</h5>
+                  <p class="card-text">
+                    Implementación en redes sociales, webs, WhatsApp y más.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="col-md-4 mb-3">
+              <div class="card shadow-sm h-100">
+                <div class="card-body">
+                  <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                  <h5 class="card-title">Soporte 24/7</h5>
+                  <p class="card-text">
+                    Atención continua para resolver cualquier incidencia al
+                    instante.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Multiagente -->
+      <section id="multiagente" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4">
+            El Multiagente que no sabías que necesitabas
+          </h2>
+          <p class="text-center mb-5">
+            Transforma tu atención al cliente y eleva tu gestión comercial
+            conectando de forma efectiva con tu audiencia a través de WhatsApp
+            Business. ¡Haz que cada interacción cuente!
+          </p>
+          <div class="row g-4">
+            <!-- CRM WhatsApp -->
+            <div class="col-md-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <div class="card-body">
+                  <i class="fab fa-whatsapp fa-3x text-success mb-3"></i>
+                  <h5 class="card-title">CRM WhatsApp</h5>
+                  <p class="card-text">
+                    Ordena todas las mejoras de WhatsApp centralizando la
+                    comunicación de tus clientes en un solo lugar.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Facebook Messenger -->
+            <div class="col-md-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <div class="card-body">
+                  <i
+                    class="fab fa-facebook-messenger fa-3x text-primary mb-3"></i>
+                  <h5 class="card-title">Facebook Messenger</h5>
+                  <p class="card-text">
+                    Utiliza nuestro Chatbot para responder las consultas más
+                    frecuentes de tus clientes en Facebook Messenger.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Instagram Direct -->
+            <div class="col-md-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <div class="card-body">
+                  <i class="fab fa-instagram fa-3x text-danger mb-3"></i>
+                  <h5 class="card-title">Instagram Direct</h5>
+                  <p class="card-text">
+                    Con la función de Chat Multicanal, podrás responder todos
+                    tus mensajes de Instagram Direct sin perder oportunidades.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Chat -->
+            <div class="col-md-3">
+              <div class="card h-100 text-center border-0 shadow-sm">
+                <div class="card-body">
+                  <i class="fas fa-comments fa-3x text-info mb-3"></i>
+                  <h5 class="card-title">Web Chat</h5>
+                  <p class="card-text">
+                    Integra un chat directo en tu sitio web y ofrece respuestas
+                    instantáneas a tus clientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo Interactiva -->
+      <section id="demo" class="py-5" data-aos="zoom-in">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4">Demo Interactiva del Chatbot</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="chat-container shadow">
+                <div class="chat-header bg-primary text-white text-center p-3">
+                  <h5>Mi Chatbot Demo</h5>
+                </div>
+                <div class="chat-messages p-3" id="chatMessages">
+                  <div class="mb-2">
+                    <strong>Mi Chatbot:</strong> ¡Hola! ¿En qué puedo ayudarte
+                    hoy?
+                  </div>
+                </div>
+                <div class="chat-input p-2 d-flex border-top">
+                  <input
+                    type="text"
+                    id="userInput"
+                    class="form-control"
+                    placeholder="Escribe tu mensaje..." />
+                  <button
+                    id="sendBtn"
+                    class="btn btn-primary ms-2"
+                    title="Enviar mensaje">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonios -->
+      <section id="testimonios" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4">Testimonios</h2>
+          <div class="row">
+            <article class="col-md-4 mb-3">
+              <div class="testimonial p-4 shadow-sm bg-white rounded">
+                <p>
+                  “Mi Chatbot transformó nuestra atención al cliente. La
+                  respuesta inmediata y precisión son insuperables.”
+                </p>
+                <p class="text-end"><em>- Cliente 1</em></p>
+              </div>
+            </article>
+            <article class="col-md-4 mb-3">
+              <div class="testimonial p-4 shadow-sm bg-white rounded">
+                <p>
+                  “La integración fue sencilla y el impacto en nuestras ventas
+                  fue notable. ¡Altamente recomendado!”
+                </p>
+                <p class="text-end"><em>- Cliente 2</em></p>
+              </div>
+            </article>
+            <article class="col-md-4 mb-3">
+              <div class="testimonial p-4 shadow-sm bg-white rounded">
+                <p>
+                  “El soporte 24/7 y la adaptabilidad del sistema hacen de Mi
+                  Chatbot una herramienta imprescindible.”
+                </p>
+                <p class="text-end"><em>- Cliente 3</em></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="py-5" data-aos="fade-right">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4">Preguntas Frecuentes</h2>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeadingOne">
                 <button
-                  id="sendBtn"
-                  class="btn btn-primary ms-2"
-                  title="Enviar mensaje">
-                  <i class="fas fa-paper-plane"></i>
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseOne"
+                  aria-expanded="true"
+                  aria-controls="faqCollapseOne">
+                  ¿Qué es un chatbot?
                 </button>
+              </h2>
+              <div
+                id="faqCollapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="faqHeadingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Un chatbot es un software de inteligencia artificial diseñado
+                  para interactuar con usuarios a través de mensajes.
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonios -->
-    <section id="testimonios" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-4">Testimonios</h2>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="testimonial p-4 shadow-sm bg-white rounded">
-              <p>
-                “Mi Chatbot transformó nuestra atención al cliente. La respuesta
-                inmediata y precisión son insuperables.”
-              </p>
-              <p class="text-end"><em>- Cliente 1</em></p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="testimonial p-4 shadow-sm bg-white rounded">
-              <p>
-                “La integración fue sencilla y el impacto en nuestras ventas fue
-                notable. ¡Altamente recomendado!”
-              </p>
-              <p class="text-end"><em>- Cliente 2</em></p>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="testimonial p-4 shadow-sm bg-white rounded">
-              <p>
-                “El soporte 24/7 y la adaptabilidad del sistema hacen de Mi
-                Chatbot una herramienta imprescindible.”
-              </p>
-              <p class="text-end"><em>- Cliente 3</em></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ (Preguntas Frecuentes) -->
-    <section id="faq" class="py-5">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-4">Preguntas Frecuentes</h2>
-        <div class="accordion" id="faqAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeadingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqCollapseOne"
-                aria-expanded="true"
-                aria-controls="faqCollapseOne">
-                ¿Qué es un chatbot?
-              </button>
-            </h2>
-            <div
-              id="faqCollapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="faqHeadingOne"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Un chatbot es un software de inteligencia artificial diseñado
-                para interactuar con usuarios a través de mensajes.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeadingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqCollapseTwo"
-                aria-expanded="false"
-                aria-controls="faqCollapseTwo">
-                ¿Cómo se integra Mi Chatbot en mi sitio web?
-              </button>
-            </h2>
-            <div
-              id="faqCollapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="faqHeadingTwo"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Nuestro sistema ofrece múltiples métodos de integración, ya sea
-                a través de un widget en la web, integraciones API o conexión
-                con redes sociales.
-              </div>
-            </div>
-          </div>
-          <!-- Puedes añadir más items según se necesite -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-4">Contacto</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <form id="contactForm">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input
-                  type="text"
-                  id="name"
-                  class="form-control"
-                  placeholder="Tu nombre"
-                  required />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control"
-                  placeholder="tu@ejemplo.com"
-                  required />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea
-                  id="message"
-                  rows="5"
-                  class="form-control"
-                  placeholder="Tu mensaje"
-                  required></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-primary">
-                  Enviar Mensaje
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeadingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqCollapseTwo"
+                  aria-expanded="false"
+                  aria-controls="faqCollapseTwo">
+                  ¿Cómo se integra Mi Chatbot en mi sitio web?
                 </button>
+              </h2>
+              <div
+                id="faqCollapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="faqHeadingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Nuestro sistema ofrece múltiples métodos de integración, ya
+                  sea a través de un widget en la web, integraciones API o
+                  conexión con redes sociales.
+                </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-      <div class="container">
-        <p class="mb-0">
-          &copy; 2025 Mi Chatbot. Todos los derechos reservados. |
-          <a
-            href="https://michatbot.online"
-            target="_blank"
-            rel="noopener"
-            class="text-decoration-none text-white">
-            Visita nuestro sitio
-          </a>
-        </p>
-      </div>
-    </footer>
+      <!-- Contacto -->
+      <section id="contacto" class="py-5 bg-light">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="text-center fw-bold mb-4">Contáctanos</h2>
+          <p class="text-center mb-5">
+            Déjanos tu mensaje y nos pondremos en contacto contigo lo antes
+            posible.
+          </p>
+          <div class="row justify-content-center">
+            <!-- Ajusta col-md-8 / col-lg-6 según el ancho deseado en pantallas grandes -->
+            <div class="col-md-8 col-lg-6">
+              <form
+                id="contactForm"
+                action="https://formspree.io/f/xxxxxx"
+                method="POST"
+                class="p-4 shadow rounded bg-white">
+                <!-- Nombre -->
+                <div class="mb-3" data-aos="fade-down" data-aos-duration="800">
+                  <label for="name" class="form-label fw-semibold"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    placeholder="Tu nombre"
+                    required />
+                </div>
+                <!-- Correo Electrónico -->
+                <div class="mb-3" data-aos="fade-right" data-aos-duration="800">
+                  <label for="email" class="form-label fw-semibold"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="tu@ejemplo.com"
+                    required />
+                </div>
+                <!-- Mensaje -->
+                <div class="mb-3" data-aos="fade-left" data-aos-duration="800">
+                  <label for="message" class="form-label fw-semibold"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    class="form-control"
+                    placeholder="Tu mensaje"
+                    required></textarea>
+                </div>
+                <!-- Botón Enviar -->
+                <div
+                  class="text-center mt-4"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000">
+                  <button type="submit" class="btn btn-primary px-4">
+                    Enviar Mensaje
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Redes del Cliente -->
+      <section id="redes" class="py-5" data-aos="fade-up">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-4">Nuestras Redes</h2>
+          <p>
+            Síguenos en nuestras redes sociales y mantente al día con las
+            últimas novedades.
+          </p>
+          <div class="d-flex justify-content-center gap-4 mt-4">
+            <!-- Facebook -->
+            <a
+              href="https://facebook.com/TuPaginaDeFacebook"
+              target="_blank"
+              rel="noopener"
+              class="text-decoration-none text-dark"
+              title="Visítanos en Facebook">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/TuPerfilDeInstagram"
+              target="_blank"
+              rel="noopener"
+              class="text-decoration-none text-dark"
+              title="Visítanos en Instagram">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <!-- Twitter -->
+            <a
+              href="https://twitter.com/TuPerfilDeTwitter"
+              target="_blank"
+              rel="noopener"
+              class="text-decoration-none text-dark"
+              title="Visítanos en Twitter">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a
+              href="https://linkedin.com/company/TuPaginaDeLinkedIn"
+              target="_blank"
+              rel="noopener"
+              class="text-decoration-none text-dark"
+              title="Visítanos en LinkedIn">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Bootstrap JS y dependencias -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <!-- Archivo JavaScript personalizado -->
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
