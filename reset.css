@@ -134,3 +134,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden; /* Previene scroll horizontal a nivel de documento */
+  position: relative; /* Establece un contexto de posicionamiento */
+  height: 100%; /* Asegura que ocupe toda la altura */
+}
